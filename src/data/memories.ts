@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { ReactNode } from "react";
 
+=======
+>>>>>>> 15dbc36 (Updated)
 export interface Memory {
   quoteTe?: string;
   quoteEn: string;
@@ -73,7 +76,10 @@ export const stats: Stat[] = [
 ];
 
 export interface BeforeAfterStep {
+<<<<<<< HEAD
   [x: string]: ReactNode;
+=======
+>>>>>>> 15dbc36 (Updated)
   titleTe: string;
   titleEn: string;
   descTe: string;
