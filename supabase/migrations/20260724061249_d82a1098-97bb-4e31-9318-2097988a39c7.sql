@@ -1,0 +1,1 @@
+DELETE FROM public.pooja_bookings WHERE id = '42466e79-25e9-41a8-9f83-ae207be73811';
