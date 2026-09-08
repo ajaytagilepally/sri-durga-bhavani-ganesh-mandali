@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 /* eslint-disable @typescript-eslint/no-explicit-any */
-=======
->>>>>>> 15dbc36 (Updated)
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Star } from "lucide-react";

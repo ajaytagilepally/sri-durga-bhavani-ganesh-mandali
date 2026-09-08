@@ -1,46 +1,16 @@
-<<<<<<< HEAD
 /* eslint-disable prettier/prettier */
 
-=======
->>>>>>> 15dbc36 (Updated)
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { T, Bi } from "@/lib/lang";
 
-<<<<<<< HEAD
-=======
-/*
- * ============================================================
- * SUPPORTERS
- * ============================================================
- *
- * HOW TO ADD / EDIT PHOTOS:
- *
- * Put your photos inside:
- *
- * public/supporters/
- *
- * Example:
- *
- * public/supporters/member-1.jpg
- * public/supporters/member-2.jpg
- * public/supporters/member-3.jpg
- *
- * Then change the "photo" value below.
- *
- * If you don't have photos yet, leave the placeholder URL.
- * The page will still work.
- */
-
->>>>>>> 15dbc36 (Updated)
 // ============================================================
 // IDOL DONORS
 // ============================================================
 
 const idolDonors = [
   {
-<<<<<<< HEAD
     name: "SDBGM - 2022",
   },
   {
@@ -54,30 +24,6 @@ const idolDonors = [
   },
   {
     name: "Soma Sathish",
-=======
-    name: "Donor Name 1",
-    photo: "https://images.unsplash.com/photo-1609619385002-f40f1b3f9b3c?w=400&q=80",
-  },
-  {
-    name: "Donor Name 2",
-    photo: "https://images.unsplash.com/photo-1598145572057-0e1c2c1d0d7c?w=400&q=80",
-  },
-  {
-    name: "Donor Name 3",
-    photo: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&q=80",
-  },
-  {
-    name: "Donor Name 4",
-    photo: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80",
-  },
-  {
-    name: "Donor Name 5",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-  },
-  {
-    name: "Donor Name 6",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
->>>>>>> 15dbc36 (Updated)
   },
 ];
 
@@ -87,7 +33,6 @@ const idolDonors = [
 
 const ladduWinners = [
   {
-<<<<<<< HEAD
     name: "Mokshith - 2022",
     amount: 16111,
   },
@@ -106,36 +51,6 @@ const ladduWinners = [
   {
     name: "Coming Soon - 2026",
     amount: 0,
-=======
-    name: "Winner Name 1",
-    amount: 11001,
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
-  },
-  {
-    name: "Winner Name 2",
-    amount: 15001,
-    photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
-  },
-  {
-    name: "Winner Name 3",
-    amount: 21001,
-    photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-  },
-  {
-    name: "Winner Name 4",
-    amount: 25001,
-    photo: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=400&q=80",
-  },
-  {
-    name: "Winner Name 5",
-    amount: 31001,
-    photo: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&q=80",
-  },
-  {
-    name: "Winner Name 6",
-    amount: 51001,
-    photo: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&q=80",
->>>>>>> 15dbc36 (Updated)
   },
 ];
 
@@ -267,15 +182,7 @@ function SupportersPage() {
 
               <div className="space-y-4">
                 {idolDonors.map((donor, index) => (
-<<<<<<< HEAD
                   <SupporterCard key={`${donor.name}-${index}`} name={donor.name} />
-=======
-                  <SupporterCard
-                    key={`${donor.name}-${index}`}
-                    name={donor.name}
-                    photo={donor.photo}
-                  />
->>>>>>> 15dbc36 (Updated)
                 ))}
               </div>
             </section>
@@ -311,10 +218,6 @@ function SupportersPage() {
                   <SupporterCard
                     key={`${winner.name}-${index}`}
                     name={winner.name}
-<<<<<<< HEAD
-=======
-                    photo={winner.photo}
->>>>>>> 15dbc36 (Updated)
                     amount={winner.amount}
                     winner
                   />
@@ -357,15 +260,10 @@ function SupportersPage() {
 
 interface SupporterCardProps {
   name: string;
-<<<<<<< HEAD
-=======
-  photo: string;
->>>>>>> 15dbc36 (Updated)
   amount?: number;
   winner?: boolean;
 }
 
-<<<<<<< HEAD
 function SupporterCard({ name, amount, winner = false }: SupporterCardProps) {
   // Get the first alphabet from the name
   const firstLetter = name.trim().charAt(0).toUpperCase();
@@ -378,24 +276,6 @@ function SupporterCard({ name, amount, winner = false }: SupporterCardProps) {
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-gold/30 bg-gold/10 flex items-center justify-center group-hover:border-gold/70 group-hover:bg-gold/20 transition-all duration-300">
           <span className="text-2xl md:text-3xl text-gold font-serif font-bold">{firstLetter}</span>
         </div>
-=======
-function SupporterCard({ name, photo, amount, winner = false }: SupporterCardProps) {
-  return (
-    <div className="group flex items-center gap-4 p-4 rounded-2xl border border-gold/10 bg-heritage-deep/40 hover:border-gold/40 hover:bg-gold/5 transition-all duration-300">
-      {/* PHOTO */}
-
-      <div className="relative shrink-0">
-        <img
-          src={photo}
-          alt={name}
-          loading="lazy"
-          className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gold/30 group-hover:border-gold/70 transition-all duration-300"
-          onError={(event) => {
-            event.currentTarget.src =
-              "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&q=80";
-          }}
-        />
->>>>>>> 15dbc36 (Updated)
 
         {/* Winner badge */}
 

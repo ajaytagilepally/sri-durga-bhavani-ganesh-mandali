@@ -39,19 +39,14 @@ export function BeforeAfterSection() {
                   i % 2 === 0 ? "" : "md:direction-rtl"
                 }`}
               >
-<<<<<<< HEAD
                 <div
                   className={`${i % 2 === 0 ? "md:pr-8 md:text-right" : "md:col-start-2 md:pl-8"}`}
                 >
-=======
-                <div className={`${i % 2 === 0 ? "md:pr-8 md:text-right" : "md:col-start-2 md:pl-8"}`}>
->>>>>>> 15dbc36 (Updated)
                   <div className="absolute left-0 md:left-1/2 top-2 -translate-x-[7px] md:-translate-x-1/2 w-4 h-4 rounded-full bg-gold animate-diya" />
                   <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-2">
                     <T te="దశ" en="Step" /> {String(i + 1).padStart(2, "0")}
                   </p>
                   <Bi
-<<<<<<< HEAD
                     te={
                       <h3 className="font-telugu text-2xl md:text-3xl text-gold mb-2">
                         {s.titleTe}
@@ -62,10 +57,6 @@ export function BeforeAfterSection() {
                         {s.titleEn}
                       </h3>
                     }
-=======
-                    te={<h3 className="font-telugu text-2xl md:text-3xl text-gold mb-2">{s.titleTe}</h3>}
-                    en={<h3 className="font-serif italic text-2xl md:text-3xl text-gold mb-2">{s.titleEn}</h3>}
->>>>>>> 15dbc36 (Updated)
                   />
                   {lang === "en" && <p className="text-cream/60 text-sm">{s.desc}</p>}
                 </div>

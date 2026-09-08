@@ -93,10 +93,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 15dbc36 (Updated)
 @utility glass-card {
   background: rgba(255, 250, 240, 0.04);
   backdrop-filter: blur(12px);
@@ -121,7 +117,6 @@
 /* All keyframes below animate only transform/opacity so they stay on the
    compositor thread (60 FPS, no layout or paint per frame). */
 @keyframes petal-fall {
-<<<<<<< HEAD
   0% {
     transform: translate3d(0, -10vh, 0) rotate(0deg);
     opacity: 0;
@@ -154,21 +149,6 @@
   100% {
     transform: translate3d(-50%, 0, 0);
   }
-=======
-  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 0; }
-  10% { opacity: 0.8; }
-  100% { transform: translate3d(40px, 110vh, 0) rotate(360deg); opacity: 0; }
-}
-
-@keyframes diya-flicker {
-  0%, 100% { opacity: 0.9; transform: scale3d(1, 1, 1); }
-  50% { opacity: 1; transform: scale3d(1.08, 1.08, 1); }
-}
-
-@keyframes marquee-scroll {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
->>>>>>> 15dbc36 (Updated)
 }
 
 .petal {
@@ -214,8 +194,3 @@
     display: none;
   }
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 15dbc36 (Updated)
