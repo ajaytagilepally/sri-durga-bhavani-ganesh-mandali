@@ -3,7 +3,7 @@ import storyImg from "@/assets/story-friends.jpg";
 import { Bi, T } from "@/lib/lang";
 
 const lines = [
-  { te: "ఇది ఒక ఆలోచనతో మొదలైంది...", en: "It started with an idea..." },
+  { te: "ఒక ఆలోచనతో మొదలైంది...", en: "It started with an idea..." },
   { te: "ఆ ఆలోచన స్నేహితులను ఒకచోట చేర్చింది.", en: "An idea brought friends together." },
   { te: "స్నేహితులు ఒక బృందంగా మారారు.", en: "Friends became a team." },
   { te: "బృందం ఒక సంప్రదాయాన్ని సృష్టించింది.", en: "A team created a tradition." },

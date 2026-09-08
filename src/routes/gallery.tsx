@@ -15,7 +15,10 @@ export const Route = createFileRoute("/gallery")({
         content: "Photo memories from five years of Ganesh Utsav at Teachers Colony, Banswada.",
       },
       { property: "og:title", content: "Ganesh Utsav Photo Gallery" },
-      { property: "og:description", content: "Five years of pandal, pooja, processions and people — in pictures." },
+      {
+        property: "og:description",
+        content: "Five years of pandal, pooja, processions and people — in pictures.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

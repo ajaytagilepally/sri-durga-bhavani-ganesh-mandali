@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface Memory {
   quoteTe?: string;
   quoteEn: string;
@@ -71,6 +73,7 @@ export const stats: Stat[] = [
 ];
 
 export interface BeforeAfterStep {
+  [x: string]: ReactNode;
   titleTe: string;
   titleEn: string;
   descTe: string;
